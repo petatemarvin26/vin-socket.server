@@ -1,0 +1,6 @@
+eval `ssh-agent`
+ssh-add ~/.ssh/petatemarvin26
+ssh-add -l
+git add .
+git commit -m "update"
+git push origin prod -f
