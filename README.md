@@ -1,0 +1,1 @@
+This application aims to create a Websocket Client focus on more lightweight transmition of data
