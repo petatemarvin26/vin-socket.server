@@ -1,0 +1,32 @@
+{
+  "name": "vin-socket.server",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "description": "This application is for server side application",
+  "scripts": {
+    "build": "rm -rf dist; webpack --env production --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/petatemarvin26/vin-socket.server.git"
+  },
+  "keywords": [
+    "websocket"
+  ],
+  "author": "Marvin Petate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petatemarvin26/vin-socket.server/issues"
+  },
+  "homepage": "https://github.com/petatemarvin26/vin-socket.server#readme",
+  "devDependencies": {
+    "@types/webpack": "^5.28.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.0.2"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
