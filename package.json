@@ -13,6 +13,10 @@
   "keywords": [
     "websocket"
   ],
+  "files": [
+    "dist",
+    "src"
+  ],
   "author": "Marvin Petate",
   "license": "ISC",
   "bugs": {
