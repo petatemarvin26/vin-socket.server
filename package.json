@@ -1,6 +1,6 @@
 {
   "name": "vin-socket.server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "description": "This application maintains the light weight of transmision and performance over websocket connection",
   "scripts": {
