@@ -2,7 +2,7 @@
   "name": "vin-socket.server",
   "version": "1.0.0",
   "main": "./dist/index.js",
-  "description": "This application is for server side application",
+  "description": "This application maintains the light weight of transmision and performance over websocket connection",
   "scripts": {
     "build": "rm -rf dist; webpack --env production --config webpack.config.js"
   },
@@ -21,12 +21,16 @@
   "homepage": "https://github.com/petatemarvin26/vin-socket.server#readme",
   "devDependencies": {
     "@types/webpack": "^5.28.1",
+    "@types/ws": "^8.5.4",
     "ts-loader": "^9.4.2",
+    "ts-transform-paths": "^3.0.0",
     "typescript": "^5.0.4",
     "webpack": "^5.82.0",
     "webpack-cli": "^5.0.2"
   },
   "dependencies": {
+    "@types/object-hash": "^3.0.2",
+    "object-hash": "^3.0.0",
     "ws": "^8.13.0"
   }
 }
