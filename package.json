@@ -11,7 +11,12 @@
     "url": "git+ssh://git@github.com/petatemarvin26/vin-socket.server.git"
   },
   "keywords": [
-    "websocket"
+    "Websocket",
+    "ws"
+  ],
+  "files": [
+    "dist",
+    "src"
   ],
   "files": [
     "dist",
