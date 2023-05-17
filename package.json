@@ -18,10 +18,6 @@
     "dist",
     "src"
   ],
-  "files": [
-    "dist",
-    "src"
-  ],
   "author": "Marvin Petate",
   "license": "ISC",
   "bugs": {
