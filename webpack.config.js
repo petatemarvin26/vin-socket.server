@@ -1,8 +1,9 @@
 const path = require('path');
+const transform = require('ts-transform-paths').default;
 
 const TS_FILES = /.(ts|tsx)/i;
 
-const resolve = (dirpath) => {
+const absolute = (dirpath) => {
   return path.resolve(__dirname, dirpath);
 };
 
@@ -20,7 +21,7 @@ const entry = {
  * @type {import('webpack').Configuration['output']}
  */
 const output = {
-  path: resolve('dist'),
+  path: absolute('dist'),
   library: {
     type: 'commonjs',
   },
@@ -33,22 +34,50 @@ const modules = {
   rules: [
     {
       test: TS_FILES,
-      loader: 'ts-loader',
+      exclude: /node_modules/,
+      use: {
+        loader: 'ts-loader',
+        options: {
+          getCustomTransformers: () => transform(),
+        },
+      },
     },
   ],
+};
+
+/**
+ * @type {import('webpack').Configuration['resolve']}
+ */
+const resolve = {
+  extensions: ['.ts', '.js'],
+  alias: {
+    abstracts: absolute('src/abstracts'),
+    classes: absolute('src/classes'),
+    common: absolute('src/common'),
+    interfaces: absolute('src/interfaces'),
+    utils: absolute('src/utils'),
+  },
+};
+
+/**
+ * @type {import('webpack').Configuration['externals']}
+ */
+const externals = {
+  bufferutil: 'bufferutil',
+  'utf-8-validate': 'utf-8-validate',
 };
 
 /**
  * @type {import('webpack').Configuration}
  */
 const config = {
+  target: 'node',
   entry,
   devtool: 'source-map',
   output,
   module: modules,
-  resolve: {
-    extensions: ['.js'],
-  },
+  resolve,
+  externals,
 };
 
 module.exports = (env) => {
@@ -56,6 +85,5 @@ module.exports = (env) => {
     config.mode = 'production';
     return config;
   }
-  config.mode = 'development';
   return config;
 };
