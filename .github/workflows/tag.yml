@@ -13,9 +13,11 @@ jobs:
           repository: ${{ github.repository }}
           token: ${{ secrets.ACC3SS_T0K3N }}
 
+      - name: install dependencies
+        run: apt install jq
+
       - name: commands
         run: |
-          VERSION_KEYVAL=$(cat ./package.json | grep version)
-          VERSION=${VERSION_KEYVAL:14:5}
+          VERSION=$(jq -r .version package.json)
           git tag v$VERSION
           git push origin v$VERSION
