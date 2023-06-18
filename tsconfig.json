@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "paths": {
+      "abstracts/*": ["abstracts/*"],
+      "classes/*": ["classes/*"],
+      "common/*": ["common/*"],
+      "interfaces/*": ["interfaces/*"],
+      "utils/*": ["utils/*"]
+    },
     "module": "CommonJS",
     "outDir": "./dist",
     "target": "ES6",
