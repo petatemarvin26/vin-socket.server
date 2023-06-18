@@ -14,7 +14,7 @@ jobs:
           token: ${{ secrets.ACC3SS_T0K3N }}
 
       - name: install dependencies
-        run: apt install jq
+        run: sudo apt-get install -y jq
 
       - name: commands
         run: |
