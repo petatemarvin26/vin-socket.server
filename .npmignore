@@ -1,0 +1,5 @@
+# third party libraries
+/node_modules
+
+# development configuration
+/.prettierrc
