@@ -3,23 +3,29 @@
   "version": "1.0.1",
   "main": "./dist/index.js",
   "description": "This application maintains the light weight of transmision and performance over websocket connection",
+  "license": "ISC",
   "scripts": {
-    "build": "rm -rf dist; webpack --env production --config webpack.config.js"
+    "build": "rm -rf ./dist; webpack --env production --config ./webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/petatemarvin26/vin-socket.server.git"
   },
   "keywords": [
-    "Websocket",
     "ws"
   ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "files": [
     "dist",
     "src"
   ],
-  "author": "Marvin Petate",
-  "license": "ISC",
+  "author": {
+    "email": "petatemarvin26@gmail.com",
+    "name": "Marvin Petate",
+    "url": "https://marvin-petate.web.app/"
+  },
   "bugs": {
     "url": "https://github.com/petatemarvin26/vin-socket.server/issues"
   },
