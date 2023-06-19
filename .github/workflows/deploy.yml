@@ -15,7 +15,7 @@ jobs:
       - name: install dependencies
         run: npm install
 
-      - name: build the project
+      - name: build
         run: npm run build
 
       - name: deploy
