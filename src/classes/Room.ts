@@ -6,8 +6,8 @@ import {
   GetClientIds,
   RemoveClientId,
   SocketRoomInterface,
-} from 'interfaces';
-import {GetId, GetName} from 'common/interface';
+} from '@/interfaces';
+import {GetId, GetName} from '@/common';
 
 class SocketRoom implements SocketRoomInterface {
   private id: string;

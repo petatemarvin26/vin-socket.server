@@ -1,7 +1,7 @@
 import {WebSocketServer} from 'ws';
 
-import {Listener, On} from 'common/interface';
-import {SocketAbstract} from 'abstracts';
+import {Listener, On} from '@/common';
+import {SocketAbstract} from '@/abstracts';
 import {
   Broadcast,
   CallbackConnect,
@@ -12,8 +12,8 @@ import {
   OnDisconnect,
   SocketInterface,
   SocketServerInterface,
-} from 'interfaces';
-import {toJSON} from 'utils';
+} from '@/interfaces';
+import {toJSON} from '@/utils';
 import SocketClient from './Client';
 class SocketServer
   extends SocketAbstract

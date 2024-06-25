@@ -1,4 +1,4 @@
-import {SocketClient, SocketRoom} from 'classes';
+import {SocketClient, SocketRoom} from '@/classes';
 
 interface AddClient {
   (client: SocketClient): void;
@@ -9,7 +9,7 @@ interface RemoveClient {
 }
 
 interface GetClient {
-  (client: SocketClient): SocketClient;
+  (client: SocketClient): SocketClient | undefined;
 }
 
 interface GetClients {
@@ -25,7 +25,7 @@ interface RemoveRoom {
 }
 
 interface GetRoom {
-  (room: SocketRoom): SocketRoom;
+  (room: SocketRoom): SocketRoom | undefined;
 }
 
 interface GetRooms {

@@ -1,4 +1,4 @@
-import {SocketClient, SocketRoom} from 'classes';
+import {SocketClient, SocketRoom} from '@/classes';
 import {
   AddClient,
   AddRoom,
@@ -9,7 +9,7 @@ import {
   RemoveClient,
   RemoveRoom,
   SocketInterface,
-} from 'interfaces';
+} from '@/interfaces';
 
 abstract class ServerAbstract implements SocketInterface {
   protected clients: Map<string, SocketClient>;

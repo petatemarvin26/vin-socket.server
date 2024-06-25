@@ -1,7 +1,8 @@
 import {WebSocket} from 'ws';
 import {IncomingMessage} from 'http';
 
-import {On} from 'common/interface';
+import {On} from '@/common';
+
 import ClientInterface from './SocketClient';
 
 interface CallbackConnect {

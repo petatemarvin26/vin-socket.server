@@ -30,7 +30,7 @@ Emit to client
 const { createServer } = require("http");
 const { SocketServer } = require("vin-socket.server");
 
-const server = createServer().listen(4000);
+const server = createServer().listen(3200);
 const wsServer = new SocketServer({ path: "/", server });
 
 wsServer.onConnect((client) => {

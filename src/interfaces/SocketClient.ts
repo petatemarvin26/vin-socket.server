@@ -1,9 +1,9 @@
 import {WebSocket} from 'ws';
 
-import {Emit, GetId, On} from 'common/interface';
+import {Emit, GetId, On} from '@/common';
 
 interface GetAddress {
-  (): string;
+  (): string | undefined;
 }
 
 interface Join {
