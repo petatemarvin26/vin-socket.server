@@ -1,4 +1,4 @@
-import {SocketClientInterface} from 'interfaces';
+import {SocketClientInterface} from '@/interfaces';
 
 interface GetId {
   (): string;

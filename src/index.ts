@@ -1,3 +1,3 @@
-import {SocketServer} from 'classes';
+import {SocketServer} from './classes';
 
 export {SocketServer};

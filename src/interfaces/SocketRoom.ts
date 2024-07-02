@@ -1,5 +1,5 @@
-import {SocketClient} from 'classes';
-import {GetId, GetName} from 'common/interface';
+import {SocketClient} from '@/classes';
+import {GetId, GetName} from '@/common/interface';
 
 interface AddClientId {
   (id: string): void;

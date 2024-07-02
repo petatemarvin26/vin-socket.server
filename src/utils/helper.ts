@@ -1,4 +1,4 @@
-import {SocketRoom} from 'classes';
+import {SocketRoom} from '@/classes';
 import {RawData} from 'ws';
 
 function toBuffer(event: string, payload: any) {

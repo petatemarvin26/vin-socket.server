@@ -2,15 +2,15 @@ import {WebSocket} from 'ws';
 import {MD5} from 'object-hash';
 import {IncomingMessage} from 'http';
 
-import {Emit, GetId, Listener, On} from 'common/interface';
+import {Emit, GetId, Listener, On} from '@/common';
 import {
   To,
   Join,
   GetAddress,
   SocketClientInterface,
   GetWebsocket,
-} from 'interfaces';
-import {insertRoom, toBuffer} from 'utils';
+} from '@/interfaces';
+import {insertRoom, toBuffer} from '@/utils';
 
 import SocketRoom from './Room';
 
