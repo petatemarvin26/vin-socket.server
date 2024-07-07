@@ -1,6 +1,6 @@
 ## VIN-SOCKET.SERVER
 
-is [NodeJS][nodejs] module, a websocket server side connection that minified the functionalities and strategies of [ws][ws] for easy implementation of websocket.
+Is a websocket server side connection that minified the functionalities and strategies of [ws][ws] for easy implementation of websocket.
 
 This module required to install its peer module [vin-socket.client][peer-lib] to client side in order to work correctly.
 
@@ -16,9 +16,9 @@ npm install vin-socket.server
 
 ### Features
 
-- easy to understand
-- modern approach
-- background digestion into binary data
+- Easy to consume
+- Modern approach
+- Background digestion as binary
 
 #
 
